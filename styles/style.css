@@ -1,0 +1,284 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+}
+
+.container {
+    background: var(--background);
+}
+
+.login {
+    display: flex;
+    margin-left: 1.2rem;
+    align-items: center;
+
+}
+
+.subtitulo {
+    color: var(--text-base);
+    margin-left: 1.25rem;
+}
+
+.login h3 {
+    margin-left: 0.62rem;
+    margin-top: 1.87rem;
+    font-size: 1.5rem;
+    color: var(--text-title);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+}
+
+header p {
+    color: var(--text-base);
+    margin-top: -0.69rem;
+    margin-left: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 1.25rem;
+}
+
+
+.email {
+    margin-left: 1.25rem;
+}
+
+#input-email:focus-within {
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+.email label {
+    color: var(--text-base);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.form-email {
+    background-color: var(--background);
+    border: 1px solid var(--text-base);
+}
+
+input {
+    background: var(--background);
+    color: var(--text-base);
+}
+
+#input-nome {
+    border: 1px solid var(--text-base);
+    border-radius: 0.25rem;
+    width: 90%;
+    height: 2.75rem;
+    outline: none;
+}
+
+#input-nome:focus-within {
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+#input-email {
+    border: 1px solid var(--text-base);
+    border-radius: 0.25rem;
+    width: 90%;
+    height: 2.75rem;
+}
+
+#checkbox1 {
+    background: var(--background);
+}
+
+
+
+
+.nome {
+    margin-left: 1.25rem;
+}
+
+.nome label {
+    color: var(--text-base);
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* Checkbox */
+.checkbox {
+    color: var(--text-base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+
+}
+
+.checkbox div a img {
+    height: 24px;
+    width: 24px;
+    background: var(--background);
+    align-items: center;
+}
+
+.reset-password {
+    color: var(--primary-color);
+}
+
+.checkbox {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.checkbox-1 label {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 400;
+}
+
+.checkbox a {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.87rem;
+}
+
+.botao {
+    background: var(--primary-color);
+    width: 90%;
+    border-radius: 0.25rem;
+    height: 3.18rem;
+    font-size: 1.12rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 2rem;
+}
+
+.new-account {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.87rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.new-accountp {
+    color: var(--primary-color);
+}
+
+.new-accountp span {
+    font-weight: 700;
+}
+
+.imagem {
+    display: none;
+}
+
+
+
+/* Responsividade */
+
+@media (min-width: 1200px) {
+
+
+    html {
+        max-width: 1120px;
+    }
+
+
+    header {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    main {
+        display: flex;
+        background: var(--background);
+        justify-content: space-between;
+    }
+
+    .imagem {
+        width: 100%;
+        height: 100vh;
+        display: unset;
+    }
+
+    .checkbox {
+        justify-content: space-between;
+    }
+
+    form {
+        background: #24221F;
+        width: 35.75rem;
+        margin-right: 7.43rem;
+        margin-left: 7.43rem;
+        height: 32rem;
+        margin-top: 8rem;
+    }
+
+    form img {
+        margin-top: 1.5rem;
+    }
+
+
+
+    #carro {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 800px;
+    }
+
+    .login {
+        justify-content: center;
+    }
+
+    .subtitulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email {
+        margin: 0 7.43rem;
+    }
+
+    .nome {
+        margin: 0 7.43rem;
+    }
+
+    .checkbox {
+        margin-top: 1.25rem;
+        margin-left: 7.43rem;
+        margin-right: 9.43rem;
+    }
+
+    .botao {
+        width:53%;
+        margin-left: 7.43rem;
+    }
+
+    .new-account {
+        margin-top: 1rem;
+    }
+}
